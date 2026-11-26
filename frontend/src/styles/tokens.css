@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  /* Art-directed Color Palette */
+  --obsidian: #1A120E;
+  --roasted: #3A2418;
+  --umber: #6B4A2E;
+  --caramel: #A88462;
+  --sandstone: #D5C4AE;
+  --charcoal: #4A4A46;
+
+  /* White Background Foundations */
+  --color-bg: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #FBF9F6;
+  --color-border: #E8E2D9;
+  --color-border-hover: #D5C4AE;
+  
+  --color-text-main: #1A120E;
+  --color-text-muted: #6B4A2E;
+  --color-text-subtle: #8A7B6E;
+
+  --color-primary: #A88462;
+  --color-primary-hover: #8F6D4C;
+  --color-primary-active: #7A5B3D;
+  --color-accent: #3A2418;
+
+  /* Civic Status Color Accents (Light-mode harmonized) */
+  --status-reported: #D97706;
+  --status-reported-bg: #FEF3C7;
+  --status-verified: #2563EB;
+  --status-verified-bg: #DBEAFE;
+  --status-assigned: #6B4A2E;
+  --status-assigned-bg: #F5EFEB;
+  --status-in_progress: #EA580C;
+  --status-in_progress-bg: #FFEDD5;
+  --status-resolved: #059669;
+  --status-resolved-bg: #D1FAE5;
+  --status-rejected: #E11D48;
+  --status-rejected-bg: #FFE4E6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #FFFFFF !important;
+  color: #1A120E;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Clean Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C4AE;
+  border-radius: 9999px;
+  border: 1px solid #FFFFFF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A88462;
+}
+
+/* MapLibre Container Utility */
+.maplibre-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+}

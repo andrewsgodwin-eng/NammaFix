@@ -1,0 +1,19 @@
+{
+  "name": "nammafix-unified",
+  "version": "2.0.0",
+  "description": "NammaFix - Real-Time Civic & Transport Problem Reporting Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"yellow,cyan\" \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm run build && npm --prefix backend start",
+    "backend": "npm --prefix backend start",
+    "frontend": "npm --prefix frontend run dev"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.19.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}

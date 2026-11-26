@@ -1,0 +1,18 @@
+/* Global App Resets & Font Integrations */
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
